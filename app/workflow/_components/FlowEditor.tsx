@@ -10,7 +10,8 @@ function FlowEditor({ workflow }: { workflow: Workflow }) {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   return (
     <main className="h-full w-full">
-      {/* Here we are basically telling ReactFlow the nodes and edges we have*/}
+      {/* Here we are basically telling ReactFlow the nodes and edges we have. And also setting the callbacks that needs to be called
+        when a node or an edge is updated*/}
       <ReactFlow
         nodes={nodes}
         edges={edges}
