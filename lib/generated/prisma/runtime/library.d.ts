@@ -109,7 +109,8 @@ declare type ArgType =
   | "Uuid"
   | "DateTime"
   | "Date"
-  | "Time";
+  | "Time"
+  | "Unknown";
 
 /**
  * Attributes is a map from string to attribute values.
